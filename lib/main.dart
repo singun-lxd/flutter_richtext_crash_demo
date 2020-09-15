@@ -1,7 +1,16 @@
+import 'dart:ui';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  // uncomment these lines to avoid crash
+  // WidgetsFlutterBinding.ensureInitialized();
+  // window.onSemanticsEnabledChanged = () {};
+  // RendererBinding.instance.setSemanticsEnabled(false);
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
