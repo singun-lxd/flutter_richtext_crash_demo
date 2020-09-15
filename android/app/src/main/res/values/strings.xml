@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="service_desc">RichText Service</string>
-    <string name="notice_enable">Please enable Accessibility service to reproduce RichText crash!</string>
+    <string name="service_name">RichTextTestService</string>
+    <string name="service_desc">RichText Crash Demo Service</string>
+    <string name="notice_enable">Please enable Accessibility service named \'%1$s\' in Settings to reproduce RichText crash!</string>
 </resources>

@@ -16,10 +16,12 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: RichText(
             text: TextSpan(children: [
+              // remove [WidgetSpan] and crash not happen any more
               WidgetSpan(child: SizedBox.shrink()),
               TextSpan(
                 text: "Text",
                 style: TextStyle(color: Colors.black),
+                // remove [recognizer] and crash not happen any more
                 recognizer: TapGestureRecognizer()..onTap = () {},
               )
             ]),
